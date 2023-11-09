@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,20 @@
 <body>
     <header>
         <nav class= "flex py-5 justify-around items-center">
-            <h1 class="text-[28px] font-bold text-xl"><span class="text-sky-600">Travel</span>Buck</h1>
-            <ul class="flex justify-around gap-8 font-medium text-[#898BA3] hover:text-sky-600">
-                <li><a class="font-semibold text-[#000]" href="#">Landing</a></li>
-                <li><a href="#">Agents</a></li>
-                <li><a href="#">Cities</a></li>
-                <li><a href="#">Packages</a></li>
-                <li><a href="#">Stories</a></li>
+            <h1 class="text-[28px] font-bold text-2xl"><span class="text-sky-600">Travel</span>Buck</h1>
+            <ul class="flex justify-around gap-8 font-medium text-[#898BA3]">
+                <li><a class=" hover:text-sky-600 font-semibold text-[#000]" href="#landing">Landing</a></li>
+                <li><a class=" hover:text-sky-600" href="#">Agents</a></li>
+                <li><a class=" hover:text-sky-600" href="#">Cities</a></li>
+                <li><a class=" hover:text-sky-600" href="#">Packages</a></li>
+                <li><a class=" hover:text-sky-600" href="#">Stories</a></li>
             </ul>
             <a class="bg-[#EFF3F8] px-5 py-2 text-[#898BA3] rounded-md" href="#">Contact Us</a>
         </nav>
+        
+    </header>
+    <main>
+        <!-- traveller -->
         <section class="relative flex justify-center">
             <div class="relative">
                 <img src="Image/hero-1.svg" alt="hero-1">
@@ -32,29 +36,72 @@
                 <a class="absolute bottom-16 right-16 py-3 px-5 rounded-lg font-medium text-white bg-[#1F4AA8]" href="#">Make a Reservation</a>
             </div>
         </section>
-    </header>
-    <main>
-        <section class="flex justify-around items-center py-10 ">
+        <!-- sponsorship -->
+        <section id="landing" class="flex justify-around items-center py-10 ">
             <a href="#"><img  src="Image/sponsor-rosewood.svg" alt="sponsor-rosewood"></a>
             <a href="#"><img  src="Image/sponsor-oysho.svg" alt="sponsor-oysho"></a>
             <a href="#"><img  src="Image/sponsor-pull-bear.svg" alt="sponsor-pull-bear"></a>
             <a href="#"><img  src="Image/sponsor-jp-morgan.svg" alt="sponsor-jp-morgan"></a>
             <a href="#"><img  src="Image/sponsor-arrlot.svg" alt="sponsor-arrlot"></a>
         </section>
-        <section class="bg-[#F1F5FA] flex justify-center items-stretch gap-5 py-10">
-            <div class="">
-                <h1 class="">Most People Go In Summer</h1>
-                <img src="Image/pic-snowHills.svg" alt="pic-snowHills">
-            </div>
+        <!-- gallery -->
+        <section class="bg-[#F1F5FA] flex justify-center gap-5 py-10">
             <div class="flex flex-col gap-y-5">
-                <img src="Image/pic-buckit1.svg" alt="pic-buckit">
-                <img src="Image/pic-village1.svg" alt="pic-village">
+                <h1 class="text-2xl font-bold">Most People Go In Summer</h1>
+                <div class="relative">
+                    <img src="Image/pic-snowHills.svg" alt="pic-snowHills">
+                    <div class="absolute bottom-8 left-8 text-white text-2xl">
+                        <h1 class="font-bold">Snow Hills</h1>
+                        <p class="text-lg">Jakarta, Indonesia</p>
+                    </div>
+                </div>
             </div>
             <div class="flex flex-col items-stretch gap-y-5">
-                <img src="Image/pic-newDream.svg" alt="pic-newDream">
-                <img src="Image/pic-italy.svg" alt="pic-italy">
+                <div class="relative">
+                    <img src="Image/pic-buckit1.svg" alt="pic-buckit">
+                    <div class="absolute bottom-8 left-8 text-white text-2xl">
+                        <h1 class="font-bold">Italy</h1>
+                        <p class="text-lg">Jakarta Indonesia</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="Image/pic-village1.svg" alt="pic-village">
+                    <div class="absolute bottom-8 left-8 text-white text-2xl">
+                        <h1 class="font-bold">Italy</h1>
+                        <p class="text-lg">Jakarta Indonesia</p>
+                    </div>
+                </div>
             </div>
-            <img class="flex items-stretch" src="Image/pic-lakeSilent.svg" alt="pic-lakeSilent">
+            <div class="flex flex-col items-stretch gap-y-5">
+                <div class="relative">
+                    <img src="Image/pic-newDream.svg" alt="pic-newDream">
+                    <div class="absolute bottom-8 left-8 text-white text-2xl">
+                        <h1 class="font-bold">New Dream</h1>
+                        <p class="text-lg">Lembang, Surabaya</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="Image/pic-italy.svg" alt="pic-italy">
+                    <div class="absolute bottom-8 left-8 text-white text-2xl">
+                        <h1 class="font-bold">Italy</h1>
+                        <p class="text-lg">Jakarta Indonesia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img class="flex items-stretch" src="Image/pic-lakeSilent.svg" alt="pic-lakeSilent">
+                <div class="absolute bottom-8 left-8 text-white text-2xl">
+                    <h1 class="font-bold">Snow Hills</h1>
+                    <p class="text-lg">Jakarta, Indonesia</p>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section>
+            <h1>Our Happy Customers</h1>
+            <div class="flex">
+                <img src="" alt="">
+            </div>
         </section>
     </main>
 
